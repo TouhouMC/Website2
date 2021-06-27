@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "reimu-roman";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/fonts/reimu-roman.woff");
+    font-display: swap;
+}

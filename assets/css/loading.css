@@ -1,0 +1,17 @@
+.loading{
+    background-color: #ff4242;
+    color: #fff;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+.loading img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-contents {
+    display: none;
+}

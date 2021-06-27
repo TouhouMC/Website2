@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/loading.css">
+    <title>「東方サーバー for Minecraft 」公式ホームページ</title>
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/menu.css">
+    <link rel="stylesheet" href="/assets/css/style.index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="loading">
+        <img src="/assets/img/loading.gif" alt="Loading...">
+    </div>
+    <div class="site-contents">
+        <div id="top"></div>
+        <div class="menu">
+            <div class="open">
+                <img src="/assets/img/sp_menu_open.png" class="sp" alt="">
+                <img src="/assets/img/pc_menu_open.png" class="pc" alt="">
+            </div>
+        </div>
+        <div class="grid_top">
+            
+        </div>
+        <div class="grid_about" id="about"></div>
+    
+        <footer>
+
+        </footer>
+    </div>
+    <script>
+        window.onload = function onload(){
+            $('.site-contents').css('display', 'block');
+            setTimeout(function (){
+                scrollTo(0, 500);
+            }, 250);
+            setTimeout(function (){
+                $('.loading').fadeOut(500);
+                let position = $("#top").offset().top;
+                $("html, body").animate({scrollTop:position}, 1000, "swing");
+            }, 500);
+        }
+    </script>
+</body>
+</html>
