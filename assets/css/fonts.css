@@ -5,3 +5,10 @@
     src: url("/assets/fonts/reimu-roman.woff");
     font-display: swap;
 }
+@font-face {
+    font-family: "marisa-regular";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/fonts/marisa-regular.woff");
+    font-display: swap;
+}
