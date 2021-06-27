@@ -1,3 +1,97 @@
-.site-contents .menu .open .sp {
+.site-contents .menu_tab{
+    font-size: 0px;
+    height: 100vh;
+    width: 400px;
+    position: fixed;
+}
+.site-contents .menu_tab .menu{
+    width: 400px;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    background-color: aqua;
+    font-size: 30px;
+}
+.site-contents .menu_tab .menu .logo{
+    width: 100%;
+}
+.site-contents .menu_tab .menu nav{
+    margin: 50px 30px 100px 30px;
+}
+.site-contents .menu_tab .menu nav ul {
+    margin: 0px;
+    width: 80%;
+    list-style: none;
+}
+.site-contents .menu_tab .menu .menu_cont {
+    width: 100%;
+    background-color: #fff;
+    transition-duration: 300ms;
+    height: 50px;
+    position: relative;
+}
+.site-contents .menu_tab .menu .menu_cont::after{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 0; height: 100%;
+    display: block;
+    transition-duration: 300ms;
+}
+.site-contents .menu_tab .menu .menu_cont::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 5px; height: 100%;
+    display: block;
+    transition-duration: 300ms;
+}
+.site-contents .menu_tab .menu .menu_cont:hover{
+    filter: brightness(120%);
+}
+.site-contents .menu_tab .menu .menu_cont:hover a img{
+    opacity: 0;
+}
+.site-contents .menu_tab .menu_cont:hover:before{
+    width: 100%;
+}
+.site-contents .menu_tab .menu .menu_cont a{
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+}
+.site-contents .menu_tab .menu .menu_cont a img{
+    margin-left: 20px;
+    height: 100%;
+    width: auto;
+    transition-duration: 300ms;
+}
+
+/*項目設定*/
+.site-contents .menu_tab .menu_cont.home a{
+    background-image: url("/assets/img/home_w.png");
+}
+.site-contents .menu_tab .menu_cont.home::before{
+    background: rgb(63, 63, 63);
+}
+.site-contents .menu_tab .menu_cont.home::after{
+    background: transparent transparent transparent rgb(63, 63, 63);
+}
+/*ボタン*/
+.site-contents .menu_tab .open{
+    position: relative;
+    left: 400px;
+    bottom: 95vh;
+}
+.site-contents .menu_tab .open .sp {
     display: none;
+}
+@media screen and (max-width: 960px) {
+    
 }
