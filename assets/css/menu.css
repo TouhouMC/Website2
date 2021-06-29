@@ -161,7 +161,7 @@
     text-align: center;
     margin: auto;
     box-shadow: 0px 0px 3px 0px #000;
-    transition-duration: 200ms;
+    transition-duration: 300ms;
 }
 .site-contents .menu_tab .menu .share_buttons .discord:hover{
     box-shadow: 0px 0px 10px 0px #000;
