@@ -23,7 +23,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body onselectstart="return false;" onmousedown="return false;">
-    <div class="loading">
+    <div class="loading" style="display: none;">
         <img src="/assets/img/loading.gif" alt="Loading...">
     </div>
     <div class="site-contents">
@@ -80,7 +80,7 @@
                 <div class="c2">
                     <img src="/assets/img/c2.png" alt="">
                 </div>
-                <div class="t1">
+                <div class="t1 show-trans-bottom">
                     <img src="/assets/img/grid_top-title.png" alt="">
                 </div>
                 <div class="v1">
@@ -106,10 +106,41 @@
                 scrollTo(0, 500);
             }, 250);
             setTimeout(function (){
+                gti_show_chara('.c1', 0, false);
+                gti_show_chara('.c2', 500, true);
+                gti_show_txt('.t1', 1000, 1000);
                 $('.loading').fadeOut(500);
                 let position = $("#top").offset().top;
                 $("html, body").animate({scrollTop:position}, 1000, "swing");
             }, 500);
+        }
+
+
+        function gti_show_chara(target, wait, frontTxt){
+            console.log("showing \""+target+"\"...")
+            let a = $(target);
+            a.find("img").css("width", "46%");
+            if (!frontTxt) a.css("transform", "translateY(0px)");
+            a.fadeOut(0);
+            setTimeout(function (){
+                a.fadeIn(500);
+                a.find("img").animate({
+                    width: "23%"
+                },350);
+            }, wait);
+        }
+        function gti_show_txt(target, wait, duration){
+            let a = $(target);
+            let i = a.find("img");
+            a.css("transform", "translateY(100px)");
+            a.fadeOut(0);
+            setTimeout(function (){
+                a.fadeIn(duration);
+                a.css("transform", "translateY(0px)");
+            }, wait);
+            setTimeout(function (){
+                a.removeAttr("style");
+            }, wait+duration);
         }
     </script>
 </body>
