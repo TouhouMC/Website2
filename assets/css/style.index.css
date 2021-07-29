@@ -32,6 +32,9 @@ body{
     top: 15vw;
     z-index: 15;
 }
+.site-contents .grid_top .show-trans-bottom{
+    transition-duration: 1500ms;
+}
 .site-contents .grid_top .title .t1 img{
     position: absolute;
     left: 10%;
