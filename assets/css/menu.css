@@ -180,6 +180,7 @@
 }
 .site-contents .menu_tab .menu .share_buttons .sns{
     margin-top: 10px;
+    height: 50px;
 }
 .site-contents .menu_tab .menu .share_buttons .sns a {
     float: left;
@@ -195,6 +196,15 @@
     transform: translateY(-5px);
     filter: drop-shadow(0px 15px 10px rgba(0,0,0,0.8));
 }
+
+/*著作権*/
+.site-contents .menu_tab .menu .copyrights{
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 
 /*ボタン*/
 .site-contents .menu_tab .open{
