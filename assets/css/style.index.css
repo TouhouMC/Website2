@@ -17,6 +17,8 @@ body{
     left: calc(400px + 100px);
     top: 10%;
     width: calc((100% - 400px) - 100px);
+    max-width: 1000px;
+    margin: calc((100% - (100% -500px)));
     height: calc(15vw + 100px + 15vw);
 }
 .site-contents .grid_top .title .c1 img{
@@ -37,18 +39,23 @@ body{
     transition-duration: 700ms;
     transform: translateY(50px);
 }
-.site-contents .grid_top .title .t1 img{
+.site-contents .grid_top .title .t1{
     position: absolute;
     left: 10%;
     top: 10vw;
     width: 80%;
     z-index: 14;
 }
+.site-contents .grid_top .title .t1 img{
+    width: 100%;
+}
 .site-contents .grid_top .title .fxs{
     width: calc((((100% - 400px) - 100px) / 2) + 20%);
-    position: absolute;
-    top: calc(10vw);
-    left: calc(((100% - 400px) - 100px) - 7%);
+    position: relative;
+    top: calc(10vw - 30px);
+    left: calc(50% - (((100% - 500px) / 2) + 20%)/2);
+    text-align: center;
+    z-index: 20;
 }
 .site-contents .grid_top .title .fxs img{
     width: 100%;
