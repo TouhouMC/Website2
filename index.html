@@ -17,6 +17,7 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <!--OGP end-->
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/fonts.css">
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/style.index.css">
@@ -30,7 +31,7 @@
         <div id="top"></div>
         <div class="menu_tab">
             <div class="menu scroll">
-                <img src="/assets/img/logo.png" alt="東方サーバー" class="logo">
+                <img src="/assets/img/logo.png" alt="東方サーバー" class="logo img-prot">
                 <nav>
                     <ul>
                         <li class="menu_cont home">
@@ -71,26 +72,26 @@
                 <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>A-->
             </div>
             <div class="open">
-                <img src="/assets/img/sp_menu_open.png" class="sp">
-                <img src="/assets/img/pc_menu_open.png" class="pc">
+                <img src="/assets/img/sp_menu_open.png" class="sp dis-rclick">
+                <img src="/assets/img/pc_menu_open.png" class="pc dis-rclick">
             </div>
         </div>
         <div class="grid_top">
             <div class="title">
                 <div class="c1 chara">
-                    <img src="/assets/img/top_c/c1.png">
+                    <img src="/assets/img/top_c/c1.png" class="img-prot">
                 </div>
                 <div class="c2 chara">
-                    <img src="/assets/img/top_c/c2.png">
+                    <img src="/assets/img/top_c/c2.png" class="img-prot">
                 </div>
                 <div class="c3 chara">
-                    <img src="/assets/img/top_c/c3.png">
+                    <img src="/assets/img/top_c/c3.png" class="img-prot">
                 </div>
                 <div class="t1">
-                    <img src="/assets/img/grid_top-title.png" alt="東方サーバー">
+                    <img src="/assets/img/grid_top-title.png" class="img-prot" alt="東方サーバー">
                 </div>
                 <div class="fxs">
-                    <img src="/assets/img/fx/zangeki1.png" class="fx_zangeki1">
+                    <img src="/assets/img/fx/zangeki1.png" class="img-prot fx_zangeki1">
                 </div>
                 <div class="v1">
                     
@@ -115,11 +116,22 @@
 
         </footer>
     </div>
+    <div class="protect-alert">
+        <div class="alert_msg_window">
+            <h4>WARN: Context menu not allowed to protect image!</h4>
+            <p>
+                画像保護のためにこの画像の上では右クリックが禁止されています
+            </p>
+        </div>
+    </div>
     <div style="display: none;">
         <!--background-imageで読み込みたい画像を入れとく-->
         <img src="/assets/img/top_bg.png">
         <img src="/assets/img/fx/zangeki1.png">
     </div>
+    <script src="/assets/js/protect.js"></script>
+    <script cmt="dev">
+    </script>
     <script>
         $('.site-contents .grid_top .title .fxs img').each(function (){
             let a = $(this);
@@ -138,8 +150,8 @@
                 scrollTo(0, 500);
             }, 250);
             setTimeout(function (){
-                gti_show_chara('.c1', 0, false);
-                gti_show_chara('.c2', 250, true);
+                gti_show_chara('.c1', 0, 500, false, "0px", "0");
+                gti_show_chara('.c2', 250, 500, true, "-100%", "0");
                 gti_show_txt('.t1', 750, 700, "50px");
                 gti_show_chara2('.c3', 2300, 1000, "50px");
                 gti_fx('.fx_zangeki1', 1500);
@@ -150,16 +162,19 @@
         }
 
 
-        function gti_show_chara(target, wait, frontTxt){
+        function gti_show_chara(target, wait, duration, frontTxt, xloc, yloc){
             console.log("showing \""+target+"\"...")
             let a = $(target);
+            a.css("transform", "translate("+xloc+","+yloc+")");
+            a.css("transition-duration", (duration+50)+"ms");
             a.find("img").css("width", "200%");
             a.fadeOut(0);
             setTimeout(function (){
-                a.fadeIn(500);
+                a.fadeIn(duration);
                 a.find("img").animate({
                     width: "100%"
                 },350);
+                a.css("transform", "translate(0px,0px)");
             }, wait);
         }
         function gti_show_chara2(target, wait, fadeDuration, firstloc){

@@ -1,0 +1,36 @@
+
+
+
+/* alert */
+body div.protect-alert{
+    background-color: rgba(255, 32, 32, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    transition-duration: 250ms;
+    height: 100%;
+    width: 100%;
+    z-index: 2147483647;
+}
+body div.protect-alert .alert_msg_window{
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    min-width: 200px;
+    max-width: 500px;
+    height: 5vh;
+    min-height: 100px;
+    max-height: 300px;
+
+    background-color: rgb(255, 42, 42);
+    border: 0px inset #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #000;
+    color: #fff;
+}
