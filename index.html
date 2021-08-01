@@ -140,14 +140,14 @@
     <script>
         $('.site-contents .grid_top .title .fxs img').each(function (){
             let a = $(this);
-            if (a.attr("src").match("/assets/img/empty\.png#.*")){
-              a.attr("src", a.attr("src").replace("/assets/img/empty.png#", ""));
-            }
         });
         window.onload = function onload(){
             $('.site-contents .grid_top .title .fxs img').each(function (){
                 let a = $(this);
                 a.hide();
+                if (a.attr("src").match("/assets/img/empty\.png#.*")){
+                  a.attr("src", a.attr("src").replace("/assets/img/empty.png#", ""));
+                }
                 a.attr("src", "/assets/img/empty.png#"+a.attr("src"));
             });
             $('.site-contents').css('display', 'block');
