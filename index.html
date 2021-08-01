@@ -77,13 +77,16 @@
         </div>
         <div class="grid_top">
             <div class="title">
-                <div class="c1">
+                <div class="c1 chara">
                     <img src="/assets/img/top_c/c1.png">
                 </div>
-                <div class="c2">
+                <div class="c2 chara">
                     <img src="/assets/img/top_c/c2.png">
                 </div>
-                <div class="t1 show-trans-bottom">
+                <div class="c3 chara">
+                    <img src="/assets/img/top_c/c3.png">
+                </div>
+                <div class="t1">
                     <img src="/assets/img/grid_top-title.png" alt="東方サーバー">
                 </div>
                 <div class="fxs">
@@ -118,6 +121,12 @@
         <img src="/assets/img/fx/zangeki1.png">
     </div>
     <script>
+        $('.site-contents .grid_top .title .fxs img').each(function (){
+            let a = $(this);
+            if (a.attr("src").match(".*\.png\.dis$")){
+              a.attr("src", a.attr("src").replace(".png.dis", ".png"));
+            }
+        });
         window.onload = function onload(){
             $('.site-contents .grid_top .title .fxs img').each(function (){
                 let a = $(this);
@@ -131,7 +140,8 @@
             setTimeout(function (){
                 gti_show_chara('.c1', 0, false);
                 gti_show_chara('.c2', 250, true);
-                gti_show_txt('.t1', 750, 700);
+                gti_show_txt('.t1', 750, 700, "50px");
+                gti_show_chara2('.c3', 2300, 1000, "50px");
                 gti_fx('.fx_zangeki1', 1500);
                 $('.loading').fadeOut(500);
                 let position = $("#top").offset().top;
@@ -143,22 +153,34 @@
         function gti_show_chara(target, wait, frontTxt){
             console.log("showing \""+target+"\"...")
             let a = $(target);
-            a.find("img").css("width", "46%");
-            if (!frontTxt) a.css("transform", "translateY(0px)");
+            a.find("img").css("width", "200%");
             a.fadeOut(0);
             setTimeout(function (){
                 a.fadeIn(500);
                 a.find("img").animate({
-                    width: "23%"
+                    width: "100%"
                 },350);
             }, wait);
         }
-        function gti_show_txt(target, wait, duration){
+        function gti_show_chara2(target, wait, fadeDuration, firstloc){
+            console.log("showing \""+target+"\"...")
+            let a = $(target);
+            a.css("transform", "translateY("+firstloc+")");
+            a.css("transition-duration", fadeDuration+"ms");
+            a.hide();
+            setTimeout(function (){
+                a.fadeIn(fadeDuration-100);
+                a.css("transform", "translateY(0px)");
+            }, wait);
+        }
+        function gti_show_txt(target, wait, duration, firstloc){
             let a = $(target);
             let i = a.find("img");
-            a.fadeOut(0);
+            a.hide();
+            a.css("transform", "translateY("+firstloc+")");
+            a.css("transition-duration", duration+"ms");
             setTimeout(function (){
-                a.fadeIn(duration);
+                a.fadeIn(duration-100);
                 a.css("transform", "translateY(0px)");
             }, wait);
         }
