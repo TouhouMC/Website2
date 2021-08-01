@@ -15,7 +15,7 @@ $('.img-prot').on("contextmenu", function (e){
     }
     setTimeout(function (){
         if (rclick_cnt != 0) rclick_cnt--;
-    }, 10000);
+    }, 1000);
     return false;
 });
 $('body div.protect-alert, .dis-rclick').on("contextmenu", function (){return false;});
