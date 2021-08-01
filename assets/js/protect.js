@@ -2,7 +2,7 @@
 var rclick_cnt = 0;
 $('.img-prot').on("contextmenu", function (e){
     rclick_cnt++;
-    if(rclick_cnt >= 3){
+    if(rclick_cnt >= 2){
         rclick_cnt = 0;
         $('body div.protect-alert').css("display", "block");
         $('body div.protect-alert').css("opacity", "1");

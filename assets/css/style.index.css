@@ -6,23 +6,34 @@ body{
 }
 
 .site-contents .grid_top{
-    display: block;
     background-image: url("/assets/img/top_bg.png");
     height: 100vh;
     width: 100%;
 }
+.site-contents .grid_top .cont{
+    float: right;
+    width: calc(100% - 450px);
+}
 
 .site-contents .grid_top .title{
-    position: relative;
-    left: calc(400px + 100px);
-    top: 10%;
-    width: calc((100% - 400px) - 100px);
+    /*left: calc(400px + 100px);*/
+    /*top: 10%;*/
+    /*width: calc(100% - 400px - 100px);*/
+    width: 100%;
     max-width: 1000px;
-    margin: calc((100% - (100% -500px)));
+    /*margin: calc((100% - (100% -500px)));*/
+    margin: auto;
+    padding-top: 50px;
     height: calc(15vw + 100px + 15vw);
 }
+.site-contents .grid_top .title .pos_box{
+    position: relative;
+    height: 100%;
+}
 .site-contents .grid_top .title .chara{
-    position: absolute;
+    position: relative;
+    display: inline-block;
+    height: auto;
 }
 .site-contents .grid_top .title .c1{
     left: 0px;
@@ -32,14 +43,16 @@ body{
 }
 .site-contents .grid_top .title .c2{
     right: 0px;
+    float: right;
     width: 23%;
-    top: 15vw;
+    top: 10vw;
     z-index: 15;
 }
 .site-contents .grid_top .title .c3{
-    right: 20%;
+    right: 0%;
+    float: right;
     width: 21%;
-    top: -10%;
+    top: -6%;
     z-index: 18;
 }
 .site-contents .grid_top .title .chara img{
@@ -57,7 +70,7 @@ body{
 }
 .site-contents .grid_top .title .fxs{
     width: calc((((100% - 400px) - 100px) / 2) + 20%);
-    position: relative;
+    position: absolute;
     top: calc(10vw - 30px);
     left: calc(50% - (((100% - 500px) / 2) + 20%)/2);
     text-align: center;

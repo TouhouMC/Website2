@@ -1,7 +1,12 @@
 
 
 
-/* alert */
+/* protect */
+.img-prot{
+    -webkit-touch-callout: none;
+    touch-action: none;
+}
+
 body div.protect-alert{
     background-color: rgba(255, 32, 32, 0.5);
     position: fixed;

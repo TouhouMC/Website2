@@ -212,6 +212,10 @@
     position: absolute;
     left: 400px;
     top: 5vh;
+    z-index: 9999;
+}
+.site-contents .menu_tab .open img{
+    z-index: 9999;
 }
 .site-contents .menu_tab .open .sp {
     display: none;
