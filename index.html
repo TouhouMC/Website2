@@ -140,15 +140,15 @@
     <script>
         $('.site-contents .grid_top .title .fxs img').each(function (){
             let a = $(this);
-            if (a.attr("src").match(".*\.png\.dis$")){
-              a.attr("src", a.attr("src").replace(".png.dis", ".png"));
+            if (a.attr("src").match("/assets/img/empty\.png#.*")){
+              a.attr("src", a.attr("src").replace("/assets/img/empty.png#", ""));
             }
         });
         window.onload = function onload(){
             $('.site-contents .grid_top .title .fxs img').each(function (){
                 let a = $(this);
                 a.hide();
-                a.attr("src", a.attr("src")+".dis");
+                a.attr("src", "/assets/img/empty.png#"+a.attr("src"));
             });
             $('.site-contents').css('display', 'block');
             setTimeout(function (){
@@ -159,7 +159,7 @@
                 gti_show_chara('.c2', 250, 500, true, "-100%", "0");
                 gti_show_txt('.t1', 750, 700, "50px");
                 gti_show_chara2('.c3', 2300, 1000, "50px");
-                gti_fx('.fx_zangeki1', 1500);
+                gti_fx('.fx_zangeki1', 1500, 1000);
                 $('.loading').fadeOut(500);
                 let position = $("#top").offset().top;
                 $("html, body").animate({scrollTop:position}, 1000, "swing");
@@ -204,12 +204,15 @@
                 a.css("transform", "translateY(0px)");
             }, wait);
         }
-        function gti_fx(target, wait){
+        function gti_fx(target, wait, duration){
             let a = $(target);
             setTimeout(function (){
                 a.show();
-                a.attr("src", a.attr("src").replace(".png.dis", ".png"));
+                a.attr("src", a.attr("src").replace("/assets/img/empty.png#", ""));
             }, wait);
+            setTimeout(function (){
+                a.attr("src", "/assets/img/empty.png#"+a.attr("src"));
+            }, wait+duration);
         }
     </script>
 </body>
