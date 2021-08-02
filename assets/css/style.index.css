@@ -79,3 +79,43 @@ body{
 .site-contents .grid_top .title .fxs img{
     width: 100%;
 }
+.site-contents .grid_top .info{
+    width: 100%;
+}
+.site-contents .grid_top .info .video{
+    width: 30%;
+    height: auto;
+    margin: 5%;
+    border: 2px solid #000;
+    vertical-align: middle;
+}
+.site-contents .grid_top .info .video .vi_box{
+    display: block;
+    border: 3px solid #000;
+    background-image: url("https://i.ytimg.com/vi/wvjUgAIwPqs/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3s2KfD1r43v2NKdWt4crT--ysAw");
+    position: relative;
+}
+.site-contents .grid_top .info .video .vi_box img{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    vertical-align: middle;
+}
+.site-contents .grid_top .info .video .vi_box .v_play_btn {
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: 300ms;
+}
+.site-contents .grid_top .info .video .vi_box .v_thumb{
+    filter: blur(0px);
+    transition-duration: 300ms;
+}
+.site-contents .grid_top .info .video .vi_box:hover .v_thumb{
+    filter: blur(3px);
+}
+.site-contents .grid_top .info .video .vi_box:hover .v_play_btn{
+    width: 20%;
+}

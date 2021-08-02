@@ -100,17 +100,19 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="info">
-                <div class="video">
-
-                </div>
-                <div class="news">
-
-                </div>
-                <div class="join_btn">
-                    
+                <div class="info">
+                    <div class="video">
+                        <a class="vi_box" href="#SQ2aBJ0rSug">
+                            <img src="https://i.ytimg.com/vi/SQ2aBJ0rSug/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3s2KfD1r43v2NKdWt4crT--ysAw" class="v_thumb">
+                            <img src="/assets/img/video_play_btn.png" class="v_play_btn">
+                        </a>
+                    </div>
+                    <div class="news">
+    
+                    </div>
+                    <div class="join_btn">
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,6 +122,14 @@
         <footer>
 
         </footer>
+    </div>
+    <div class="window">
+        <div class="box">
+            <button class="win_cls_btn"><a href="#">Close ✕</a></button>
+            <div class="yt_player">
+                <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
     <div class="protect-alert">
         <div class="alert_msg_window">
@@ -205,6 +215,25 @@
                     $('.site-contents .menu_tab').addClass('is_close');
                 }, 500);
             }
+        });
+        //video_play
+        $('.video a.vi_box').on("click", function(){
+            console.log($(this).attr("href"));
+            let id = $(this).attr("href").substr(1);
+            let iframe = $('.window .yt_player iframe').attr("src", "https://www.youtube-nocookie.com/embed/"+id);
+            //$('.window').css("opacity", "0");
+            $('.window .box').fadeOut(0);
+            $('.window').css("display", "block");
+            $('.window .box').fadeIn(1000);
+            return false;
+        });
+        //window_close
+        $('.window .win_cls_btn a').on("click", function (){
+            $('.window .box').fadeOut(1000);
+            setTimeout(function (){
+                $('.window').css("display", "none");
+            }, 1000);
+            return false;
         });
 
 
