@@ -102,16 +102,21 @@
                 </div>
                 <div class="info">
                     <div class="video">
+                        <span class="v_title">公式PV</span>
                         <a class="vi_box" href="#SQ2aBJ0rSug">
                             <img src="https://i.ytimg.com/vi/SQ2aBJ0rSug/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3s2KfD1r43v2NKdWt4crT--ysAw" class="v_thumb">
                             <img src="/assets/img/video_play_btn.png" class="v_play_btn">
                         </a>
                     </div>
                     <div class="news">
-    
-                    </div>
-                    <div class="join_btn">
-                        
+                        <span class="n_title">更新情報</span>
+                        <div class="inbox">
+                            <ul>
+                                <li>
+                                    <span class="upload">2020/08/01</span> <a href="/news/20210801-1">WebSiteを進化させています！</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -190,9 +195,6 @@
                     console.log(b.width());
                     b.css("transition-duration", "500ms");
                     b.css("width", "calc(100% - 450px)");
-                    setTimeout(function (){
-                        b.removeAttr("style");
-                    }, 500);
                 });
                 setTimeout(function (){
                     $('.site-contents .menu_tab').removeClass('is_close');
