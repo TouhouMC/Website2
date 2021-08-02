@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="copyrights">
-                    <p>mf_Miiもしくは著作者の許可なくこのサイト上のすべてのコンテンツの複製を禁ずる</p>
+                    <p>mf_Miiもしくは著作者の許可なくこのサイト上の一部又は全てのコンテンツの複製を禁ずる</p>
                 </div>
                 <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>A-->
             </div>
@@ -138,9 +138,8 @@
     <script cmt="dev">
     </script>
     <script>
-        $('.site-contents .grid_top .title .fxs img').each(function (){
-            let a = $(this);
-        });
+        //Listener
+        //onLoad
         window.onload = function onload(){
             $('.site-contents .grid_top .title .fxs img').each(function (){
                 let a = $(this);
@@ -165,8 +164,51 @@
                 $("html, body").animate({scrollTop:position}, 1000, "swing");
             }, 500);
         }
+        //pc_menu_open
+        $('.site-contents .menu_tab .open .pc').on('click', function(){
+            console.log($(this));
+            if($('.site-contents .menu_tab').hasClass('is_close')){
+                console.log("menu opening")
+                $('.site-contents .menu_tab .open').animate({
+                    "left": "400px"
+                }, 500);
+                $('.site-contents .menu_tab .menu').animate({
+                    "left": "0px"
+                }, 500);
+                $('.site-contents * .cont').each(function (){
+                    let b = $(this);
+                    console.log(b.width());
+                    b.css("transition-duration", "500ms");
+                    b.css("width", "calc(100% - 450px)");
+                    setTimeout(function (){
+                        b.removeAttr("style");
+                    }, 500);
+                });
+                setTimeout(function (){
+                    $('.site-contents .menu_tab').removeClass('is_close');
+                }, 500);
+            }else{
+                console.log("menu closing");
+                $('.site-contents .menu_tab .open').animate({
+                    "left": "0px"
+                }, 500);
+                $('.site-contents .menu_tab .menu').animate({
+                    "left": "-400px"
+                }, 500);
+                $('.site-contents * .cont').each(function (){
+                    let b = $(this);
+                    b.animate({
+                        "width": "100%"
+                    }, 500);
+                });
+                setTimeout(function (){
+                    $('.site-contents .menu_tab').addClass('is_close');
+                }, 500);
+            }
+        });
 
 
+        //Functions
         function gti_show_chara(target, wait, duration, frontTxt, xloc, yloc){
             console.log("showing \""+target+"\"...")
             let a = $(target);
