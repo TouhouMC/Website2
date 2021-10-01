@@ -24,7 +24,7 @@ body{
     /*margin: calc((100% - (100% -500px)));*/
     margin: auto;
     padding-top: 50px;
-    height: calc(15vw + 100px + 15vw);
+    height: calc(23vw + 100px);
 }
 .site-contents .grid_top .title .pos_box{
     position: relative;
@@ -86,6 +86,7 @@ body{
     width: 30%;
     height: auto;
     margin: 5%;
+    margin-top: 10px;
     vertical-align: middle;
     display: inline-block;
 }
@@ -153,6 +154,7 @@ body{
     border: 1px solid #474747;
     border-radius: 5px;
     padding: 2px;
+    margin: 0px;
 }
 .site-contents .grid_top .info .news .inbox ul{
     padding: 0;
