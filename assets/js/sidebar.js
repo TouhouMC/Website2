@@ -28,15 +28,13 @@ $('.site-contents .menu_tab .open .pc').on('click', function(){
         $('.site-contents .menu_tab .menu').animate({
             "left": "-400px"
         }, 500);
-        $('.site-contents * .cont').each(function (){
-            let b = $(this);
-            console.log(b.width());
-            b.animate({
-                "width": "100%"
-            }, 500);
-        });
         setTimeout(function (){
-            $('.site-contents .menu_tab').addClass('is_close');
-        }, 500);
+            $('.site-contents * .cont').each(function (){
+                let b = $(this);
+                console.log(b.width());
+                b.css("width","100%");
+            });
+        }, 100);
+        $('.site-contents .menu_tab').addClass('is_close');
     }
 });
