@@ -161,8 +161,11 @@
     <script>
         //Listener
         //onLoad
-        window.onload = onload();
+        var load_complete = false;
+        $(window).on('load', onload());
+
         function onload(){
+            load_complete = true;
             console.log("onload");
             //setup
             //let v_aspect = 9 / 16;
