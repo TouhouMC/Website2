@@ -67,13 +67,12 @@
                     transition-duration: 300ms;
                 }
                 &:hover{
-                    //filter: brightness(120%);
-                }
-                &:hover a img{
-                    opacity: 0;
-                }
-                &:hover:before{
-                    width: 100%;
+                    a img{
+                        opacity: 0;
+                    }
+                    &:before{
+                        width: 100%;
+                    }
                 }
                 a{
                     display: block;

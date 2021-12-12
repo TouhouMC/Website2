@@ -160,9 +160,7 @@
         //Listener
         //onLoad
         var load_complete = false;
-        $(window).on('load', onload());
-
-        function onload(){
+        $(window).on('load', function (){
             load_complete = true;
             console.log("onload");
             //setup
@@ -195,7 +193,7 @@
                 let position = $("#top").offset().top;
                 $("html, body").animate({scrollTop:position}, 1000, "swing");
             }, 500);
-        }
+        });
         //video_play
         $('.video a.vi_box').on("click", function(){
             console.log($(this).attr("href"));
