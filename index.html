@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,6 +26,7 @@
     <link rel="stylesheet" href="/assets/css/style.index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body onselectstart="return false;" onmousedown="return false;">
     <div class="loading">
         <img src="/assets/img/loading.gif" alt="Loading..." oncontextmenu="return false;">
@@ -71,7 +73,6 @@
                 <div class="copyrights">
                     <p>mf_Miiもしくは著作者の許可なくこのサイト上の一部又は全てのコンテンツの複製を禁ずる</p>
                 </div>
-                <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>A-->
             </div>
             <div class="open">
                 <img src="/assets/img/sp_menu_open.png" class="sp dis-rclick">
@@ -98,7 +99,7 @@
                             <img src="/assets/img/fx/zangeki1.png" class="img-prot fx_zangeki1">
                         </div>
                         <div class="v1">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -122,9 +123,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid_about" id="about">
-
         </div>
         <footer>
 
@@ -157,42 +155,44 @@
     <script>
         //Listener
         //onLoad
-        window.onload = function onload(){
-            //setup
-            //let v_aspect = 9 / 16;
-            //console.log("YT_Width")
-            //$('div.window .box .yt_player iframe').attr("height", $('div.window .box .yt_player iframe').width() * v_aspect);
-            
+        window.onload = function onload() {
+                //setup
+                //let v_aspect = 9 / 16;
+                //console.log("YT_Width")
+                //$('div.window .box .yt_player iframe').attr("height", $('div.window .box .yt_player iframe').width() * v_aspect);
 
 
-            //TitleAnm
-            $('.site-contents .grid_top .title .fxs img').each(function (){
-                let a = $(this);
-                a.hide();
-                if (a.attr("src").match("/assets/img/empty\.png#.*")){
-                  a.attr("src", a.attr("src").replace("/assets/img/empty.png#", ""));
-                }
-                a.attr("src", "/assets/img/empty.png#"+a.attr("src"));
-            });
-            $('.site-contents').css('display', 'block');
-            setTimeout(function (){
-                scrollTo(0, 500);
-            }, 250);
-            setTimeout(function (){
-                gti_show_chara('.c1', 0, 500, false, "0px", "0");
-                gti_show_chara('.c2', 250, 500, true, "-100%", "0");
-                gti_show_txt('.t1', 750, 700, "50px");
-                gti_show_chara2('.c3', 2300, 1000, "50px");
-                gti_fx('.fx_zangeki1', 1500, 1000);
-                $('.loading').fadeOut(500);
-                let position = $("#top").offset().top;
-                $("html, body").animate({scrollTop:position}, 1000, "swing");
-            }, 500);
-        }
-        //pc_menu_open
-        $('.site-contents .menu_tab .open .pc').on('click', function(){
+
+                //TitleAnm
+                $('.site-contents .grid_top .title .fxs img').each(function() {
+                    let a = $(this);
+                    a.hide();
+                    if (a.attr("src").match("/assets/img/empty\.png#.*")) {
+                        a.attr("src", a.attr("src").replace("/assets/img/empty.png#", ""));
+                    }
+                    a.attr("src", "/assets/img/empty.png#" + a.attr("src"));
+                });
+                $('.site-contents').css('display', 'block');
+                setTimeout(function() {
+                    scrollTo(0, 500);
+                }, 250);
+                setTimeout(function() {
+                    gti_show_chara('.c1', 0, 500, false, "0px", "0");
+                    gti_show_chara('.c2', 250, 500, true, "-100%", "0");
+                    gti_show_txt('.t1', 750, 700, "50px");
+                    gti_show_chara2('.c3', 2300, 1000, "50px");
+                    gti_fx('.fx_zangeki1', 1500, 1000);
+                    $('.loading').fadeOut(500);
+                    let position = $("#top").offset().top;
+                    $("html, body").animate({
+                        scrollTop: position
+                    }, 1000, "swing");
+                }, 500);
+            }
+            //pc_menu_open
+        $('.site-contents .menu_tab .open .pc').on('click', function() {
             console.log($(this));
-            if($('.site-contents .menu_tab').hasClass('is_close')){
+            if ($('.site-contents .menu_tab').hasClass('is_close')) {
                 console.log("menu opening")
                 $('.site-contents .menu_tab .open').animate({
                     "left": "400px"
@@ -200,16 +200,16 @@
                 $('.site-contents .menu_tab .menu').animate({
                     "left": "0px"
                 }, 500);
-                $('.site-contents * .cont').each(function (){
+                $('.site-contents * .cont').each(function() {
                     let b = $(this);
                     console.log(b.width());
                     b.css("transition-duration", "500ms");
                     b.css("width", "calc(100% - 450px)");
                 });
-                setTimeout(function (){
+                setTimeout(function() {
                     $('.site-contents .menu_tab').removeClass('is_close');
                 }, 500);
-            }else{
+            } else {
                 console.log("menu closing");
                 $('.site-contents .menu_tab .open').animate({
                     "left": "0px"
@@ -217,22 +217,22 @@
                 $('.site-contents .menu_tab .menu').animate({
                     "left": "-400px"
                 }, 500);
-                $('.site-contents * .cont').each(function (){
+                $('.site-contents * .cont').each(function() {
                     let b = $(this);
                     b.animate({
                         "width": "100%"
                     }, 500);
                 });
-                setTimeout(function (){
+                setTimeout(function() {
                     $('.site-contents .menu_tab').addClass('is_close');
                 }, 500);
             }
         });
         //video_play
-        $('.video a.vi_box').on("click", function(){
+        $('.video a.vi_box').on("click", function() {
             console.log($(this).attr("href"));
             let id = $(this).attr("href").substr(1);
-            let iframe = $('.window .yt_player iframe').attr("src", "https://www.youtube-nocookie.com/embed/"+id);
+            let iframe = $('.window .yt_player iframe').attr("src", "https://www.youtube-nocookie.com/embed/" + id);
             //$('.window').css("opacity", "0");
             $('.window .box').fadeOut(0);
             $('.window').css("display", "block");
@@ -240,9 +240,9 @@
             return false;
         });
         //window_close
-        $('.window .win_cls_btn a').on("click", function (){
+        $('.window .win_cls_btn a').on("click", function() {
             $('.window .box').fadeOut(1000);
-            setTimeout(function (){
+            setTimeout(function() {
                 $('.window').css("display", "none");
             }, 1000);
             return false;
@@ -250,55 +250,59 @@
 
 
         //Functions
-        function gti_show_chara(target, wait, duration, frontTxt, xloc, yloc){
-            console.log("showing \""+target+"\"...")
+        function gti_show_chara(target, wait, duration, frontTxt, xloc, yloc) {
+            console.log("showing \"" + target + "\"...")
             let a = $(target);
-            a.css("transform", "translate("+xloc+","+yloc+")");
-            a.css("transition-duration", (duration+50)+"ms");
+            a.css("transform", "translate(" + xloc + "," + yloc + ")");
+            a.css("transition-duration", (duration + 50) + "ms");
             a.find("img").css("width", "200%");
             a.fadeOut(0);
-            setTimeout(function (){
+            setTimeout(function() {
                 a.fadeIn(duration);
                 a.find("img").animate({
                     width: "100%"
-                },350);
+                }, 350);
                 a.css("transform", "translate(0px,0px)");
             }, wait);
         }
-        function gti_show_chara2(target, wait, fadeDuration, firstloc){
-            console.log("showing \""+target+"\"...")
+
+        function gti_show_chara2(target, wait, fadeDuration, firstloc) {
+            console.log("showing \"" + target + "\"...")
             let a = $(target);
-            a.css("transform", "translateY("+firstloc+")");
-            a.css("transition-duration", fadeDuration+"ms");
+            a.css("transform", "translateY(" + firstloc + ")");
+            a.css("transition-duration", fadeDuration + "ms");
             a.hide();
-            setTimeout(function (){
-                a.fadeIn(fadeDuration-100);
+            setTimeout(function() {
+                a.fadeIn(fadeDuration - 100);
                 a.css("transform", "translateY(0px)");
             }, wait);
         }
-        function gti_show_txt(target, wait, duration, firstloc){
+
+        function gti_show_txt(target, wait, duration, firstloc) {
             let a = $(target);
             let i = a.find("img");
             a.hide();
-            a.css("transform", "translateY("+firstloc+")");
-            a.css("transition-duration", duration+"ms");
-            setTimeout(function (){
-                a.fadeIn(duration-100);
+            a.css("transform", "translateY(" + firstloc + ")");
+            a.css("transition-duration", duration + "ms");
+            setTimeout(function() {
+                a.fadeIn(duration - 100);
                 a.css("transform", "translateY(0px)");
             }, wait);
         }
-        function gti_fx(target, wait, duration){
+
+        function gti_fx(target, wait, duration) {
             let a = $(target);
             a.css("height", "0");
-            setTimeout(function (){
+            setTimeout(function() {
                 a.show();
                 a.css("height", "auto");
                 a.attr("src", a.attr("src").replace("/assets/img/empty.png#", ""));
             }, wait);
-            setTimeout(function (){
+            setTimeout(function() {
                 a.css("height", "0");
-            }, wait+duration);
+            }, wait + duration);
         }
     </script>
 </body>
+
 </html>
