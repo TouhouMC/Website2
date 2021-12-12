@@ -1,2 +1,7 @@
+*.css.map
 /assets/fonts/reimu-roman.woff
 /assets/fonts/marisa-regular.woff
+/assets/img/*/*.xcf
+/assets/img/*.xcf
+/assets/img/*/*.gvdesign
+/assets/img/*.gvdesign

@@ -93,11 +93,6 @@
           transition-duration: 300ms;
 }
 
-.site-contents .menu_tab .menu .menu_cont:hover {
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
-}
-
 .site-contents .menu_tab .menu .menu_cont:hover a img {
   opacity: 0;
 }
@@ -142,11 +137,11 @@
 }
 
 .site-contents .menu_tab .menu .menu_cont.news::before {
-  background: #73faff;
+  background: #ffbe73;
 }
 
 .site-contents .menu_tab .menu .menu_cont.news::after {
-  background: transparent transparent transparent #73faff;
+  background: transparent transparent transparent #ffbe73;
 }
 
 .site-contents .menu_tab .menu .menu_cont.about a {

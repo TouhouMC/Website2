@@ -4,7 +4,7 @@
         height: 100vh;
         width: 400px;
         position: fixed;
-        .menu{
+        .menu {
             width: 400px;
             height: 100%;
             position: relative;
@@ -67,7 +67,7 @@
                     transition-duration: 300ms;
                 }
                 &:hover{
-                    filter: brightness(120%);
+                    //filter: brightness(120%);
                 }
                 &:hover a img{
                     opacity: 0;
@@ -110,10 +110,10 @@
                         background-image: url("/assets/img/menu/news_w.png");
                     }
                     &::before{
-                        background: rgb(115, 250, 255);
+                        background: rgb(255, 190, 115);
                     }
                     &::after{
-                        background: transparent transparent transparent rgb(115, 250, 255);
+                        background: transparent transparent transparent rgb(255, 190, 115);
                     }
                 }
                 

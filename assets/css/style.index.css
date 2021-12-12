@@ -69,7 +69,7 @@ body .site-contents .grid_top .title .pos_box .chara img {
   width: 100%;
 }
 
-body .site-contents .grid_top .title .pos_box .chara.t1 {
+body .site-contents .grid_top .title .pos_box .t1 {
   position: absolute;
   left: 10%;
   top: 10vw;
@@ -77,11 +77,11 @@ body .site-contents .grid_top .title .pos_box .chara.t1 {
   z-index: 14;
 }
 
-body .site-contents .grid_top .title .pos_box .chara.t1 img {
+body .site-contents .grid_top .title .pos_box .t1 img {
   width: 100%;
 }
 
-body .site-contents .grid_top .title .pos_box .chara.fxs {
+body .site-contents .grid_top .title .pos_box .fxs {
   width: calc((((100% - 400px) - 100px) / 2) + 20%);
   position: absolute;
   top: calc(10vw - 30px);
@@ -90,7 +90,7 @@ body .site-contents .grid_top .title .pos_box .chara.fxs {
   z-index: 20;
 }
 
-body .site-contents .grid_top .title .pos_box .chara.fxs img {
+body .site-contents .grid_top .title .pos_box .fxs img {
   width: 100%;
 }
 
