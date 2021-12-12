@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="/assets/img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/loading.css">
     <title>「東方サーバー for Minecraft 」公式ホームページ</title>
-    <meta name="author" content="東方MC Project. Code by mf_Mii">
+    <meta name="author" content="東方MC Project. Coded by mf_Mii">
     <meta name="description" content="東方サーバー for Minecraft ― それは、別の世界の幻想郷の物語である…">
     <!--OGP start-->
     <meta property="og:url" content="https://web2.thmc.ml/">
@@ -17,6 +17,7 @@
     <meta property="og:image" content="https://web2.thmc.ml/assets/img/index.ogp.jpg">
     <meta property="og:description" content="東方サーバー for Minecraft ― それは、別の世界の幻想郷の物語である…">
     <meta property="og:type" content="website">
+    <meta name="twitter:image" content="https://web2.thmc.ml/assets/img/index.ogp.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <!--OGP end-->
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -157,7 +158,9 @@
     <script>
         //Listener
         //onLoad
-        window.onload = function onload(){
+        window.onload = onload();
+        function onload(){
+            console.log("onload");
             //setup
             //let v_aspect = 9 / 16;
             //console.log("YT_Width")
