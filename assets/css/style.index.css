@@ -47,6 +47,7 @@ body .site-contents .grid_top .title .pos_box .chara.c1 {
   width: 23%;
   height: auto;
   z-index: 13;
+  position: relative;
 }
 
 body .site-contents .grid_top .title .pos_box .chara.c2 {
@@ -55,6 +56,7 @@ body .site-contents .grid_top .title .pos_box .chara.c2 {
   width: 23%;
   top: 10vw;
   z-index: 15;
+  position: relative;
 }
 
 body .site-contents .grid_top .title .pos_box .chara.c3 {
@@ -63,6 +65,7 @@ body .site-contents .grid_top .title .pos_box .chara.c3 {
   width: 21%;
   top: -6%;
   z-index: 18;
+  position: relative;
 }
 
 body .site-contents .grid_top .title .pos_box .chara img {

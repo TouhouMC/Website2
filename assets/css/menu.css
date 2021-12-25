@@ -8,6 +8,8 @@
   height: 100vh;
   width: 400px;
   position: fixed;
+  top: 0px;
+  z-index: 99999;
 }
 
 .site-contents .menu_tab .menu {
@@ -267,6 +269,7 @@
 }
 
 .site-contents .open img {
+  position: relative;
   z-index: 9999;
 }
 

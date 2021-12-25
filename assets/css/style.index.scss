@@ -38,6 +38,7 @@ body{
                             width: 23%;
                             height: auto;
                             z-index: 13;
+                            position: relative;
                         }
                         &.c2{
                             right: 0px;
@@ -45,6 +46,7 @@ body{
                             width: 23%;
                             top: 10vw;
                             z-index: 15;
+                            position: relative;
                         }
                         &.c3{
                             right: 0%;
@@ -52,6 +54,7 @@ body{
                             width: 21%;
                             top: -6%;
                             z-index: 18;
+                            position: relative;
                         }
                         img{
                             width: 100%;

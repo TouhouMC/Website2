@@ -4,10 +4,7 @@ $('.site-contents .menu_tab .open .pc').on('click', function(){
     if($('.site-contents .menu_tab').hasClass('is_close')){
         //OPEN
         console.log("Opening sidemenu")
-        $('.site-contents .menu_tab .open').animate({
-            "left": "400px"
-        }, 500);
-        $('.site-contents .menu_tab .menu').animate({
+        $('.site-contents .menu_tab').animate({
             "left": "0px"
         }, 500);
         $('.site-contents * .cont').each(function (){
@@ -20,10 +17,7 @@ $('.site-contents .menu_tab .open .pc').on('click', function(){
     }else{
         console.log("Closing sidemenu");
         //CLOSE
-        $('.site-contents .menu_tab .open').animate({
-            "left": "0px"
-        }, 500);
-        $('.site-contents .menu_tab .menu').animate({
+        $('.site-contents .menu_tab').animate({
             "left": "-400px"
         }, 500);
         setTimeout(function (){
