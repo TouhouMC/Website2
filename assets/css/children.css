@@ -1,0 +1,30 @@
+body .site-contents .grid_header {
+  background: url("/assets/img/headers/template.bg.png");
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  min-height: 240px;
+  height: calc(30vh + 100px);
+  width: 100%;
+}
+
+body .site-contents .grid_header * div {
+  display: inline-block;
+}
+
+body .site-contents .grid_header .cont_box {
+  margin: 30px auto;
+  height: calc(100% - 60px);
+  display: inline-block;
+  text-align: center;
+}
+
+body .site-contents .grid_header .cont_box .text {
+  vertical-align: middle;
+  margin: auto;
+  height: calc(100% - 60px);
+}
+
+body .site-contents .grid_header .cont_box .text img {
+  height: 100%;
+}
+/*# sourceMappingURL=children.css.map */

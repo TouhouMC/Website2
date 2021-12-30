@@ -1,0 +1,28 @@
+body {
+    .site-contents {
+        .grid_header {
+            background: url("/assets/img/headers/template.bg.png");
+            backdrop-filter: blur(100px);
+            min-height: 240px;
+            height: calc(30vh + 100px);
+            width: 100%;
+            * div {
+                display: inline-block;
+            }
+            .cont_box {
+                margin: 30px auto;
+                height: calc(100% - 60px);
+                display: inline-block;
+                text-align: center;
+                .text {
+                    vertical-align: middle;
+                    margin: auto;
+                    height: calc(100% - 60px);
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

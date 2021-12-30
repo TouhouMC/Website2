@@ -88,4 +88,18 @@ body div.protect-alert .alert_msg_window {
           box-shadow: 0px 0px 10px #000;
   color: #fff;
 }
+
+body .site-contents .grid {
+  width: 100%;
+  text-align: right;
+}
+
+body .site-contents .grid .cont_box {
+  width: calc(100% - 450px);
+  text-align: left;
+  margin-left: auto;
+  margin-right: 0px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
 /*# sourceMappingURL=style.css.map */

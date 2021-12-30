@@ -12,13 +12,6 @@ body .site-contents .grid_top {
   width: 100%;
 }
 
-body .site-contents .grid_top .cont {
-  float: right;
-  width: calc(100% - 450px);
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
 body .site-contents .grid_top .title {
   /*left: calc(400px + 100px);*/
   /*top: 10%;*/
