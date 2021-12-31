@@ -75,4 +75,8 @@ body .site-contents .grid_textarea .cont_box .text_box .title {
 body .site-contents .grid_textarea .cont_box .text_box .u {
   border-bottom: 1px solid #000;
 }
+
+body .site-contents .grid_textarea .cont_box .text_box .text {
+  text-align: left;
+}
 /*# sourceMappingURL=children.css.map */
