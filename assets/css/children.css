@@ -1,10 +1,17 @@
+@charset "UTF-8";
+body .site-contents {
+  background: #cccccc;
+  min-height: 100vh;
+}
+
 body .site-contents .grid_header {
   background: url("/assets/img/headers/template.bg.png");
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
   min-height: 240px;
   height: calc(30vh + 100px);
   width: 100%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
 }
 
 body .site-contents .grid_header * div {
@@ -26,5 +33,46 @@ body .site-contents .grid_header .cont_box .text {
 
 body .site-contents .grid_header .cont_box .text img {
   height: 100%;
+}
+
+body .site-contents .grid_header::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: inherit;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  z-index: -1;
+  /*ここに書いても反映されなかったのでCSSにも直接書きました、すみません
+                あとこの方法は調べたら出てきました...*/
+}
+
+body .site-contents .grid_textarea {
+  padding: 50px 0px;
+  background: url("/assets/img/grids/template.1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .site-contents .grid_textarea .cont_box .text_box {
+  margin: 0px 100px;
+  padding: 25px 20px;
+  border: 3px solid #000;
+  background: #fffa;
+  -webkit-box-shadow: 0px 0px 30px #fff;
+          box-shadow: 0px 0px 30px #fff;
+  text-align: center;
+}
+
+body .site-contents .grid_textarea .cont_box .text_box .title {
+  text-align: center;
+  display: inline-block;
+}
+
+body .site-contents .grid_textarea .cont_box .text_box .u {
+  border-bottom: 1px solid #000;
 }
 /*# sourceMappingURL=children.css.map */
