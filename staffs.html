@@ -14,6 +14,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="東方MC Project. Coded by mf_Mii">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .users {
+            background-color: #aaf6;
+            width: 20%;
+            padding: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        
+        .user-top img {
+            width: 40%;
+        }
+        
+        .user-main {
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body onselectstart="return false;" onmousedown="return false;">
@@ -77,229 +94,70 @@
         </div>
         <div class="grid grid_textarea grid_1">
             <div class="cont_box">
-
-                <style>
-                    .text_box hr {
-                        border-color: black;
-                    }
-                    
-                    .text_box img {
-                        width: 25%;
-                    }
-                    
-                    .text_box table {
-                        font-size: 175%;
-                    }
-                    
-                    .text_box table td {
-                        text-align: left;
-                        padding-left: 20px;
-                    }
-                    
-                    .text_box .staff {
-                        display: flex;
-                    }
-                    
-                    .text_box .staffl {
-                        width: 400px;
-                    }
-                    
-                    .text_box .staffr {
-                        width: calc(100% - 400px);
-                    }
-                </style>
-
                 <div class="text_box">
-                    <h1>pknmus</h1>
-                    <hr>
-                    <div class="staff">
-                        <div class="staffl">
-                            <img src="https://crafatar.com/renders/body/10b4df5c-3cba-44df-b4dd-6da3d8bdb093?overlay=true">
+
+                    <div id="owner">
+                        <h1>オーナー(Owner)</h1>
+                        <div style="display: flex; justify-content: center;">
+                            <div class="users">
+                                <div class="user-top">
+                                    <img alt="pknmus" src="https://crafatar.com/avatars/10b4df5c-3cba-44df-b4dd-6da3d8bdb093">
+                                    <p style="font-size: 40px;margin: 0px;">pknmus</p>
+                                    <p style="margin: 0px;">役職｜オーナー</p>
+                                </div>
+                                <div class="user-main">
+                                    <p style="font-size: 20px;">ここに自己紹介を書いてもらう</p>
+                                </div>
+                                <div class="user-sns">
+                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/disco_ico.png" alt="Discord" style="filter: grayscale(1);"></a>
+                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/Github_ico.png" alt="Github" style="filter: brightness(3);"></a>
+                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/yt_ico.png" alt="Youtube" style="filter: grayscale(1);"></a>
+                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/tw_ico.png" alt="Twitter" style="filter: grayscale(1);"></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="staffr">
-                            <table>
-                                <tr>
-                                    <th>役職</th>
-                                    <td>オーナー</td>
-                                </tr>
-                                <tr>
-                                    <th>概要</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>Twitter</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>Discord</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>MCID</th>
-                                    <td>pknmus</td>
-                                </tr>
-                            </table>
-                        </div>
+
                     </div>
                 </div>
-
-                <br><br>
-
                 <div class="text_box">
-                    <h1>mf_Mii</h1>
-                    <hr>
-                    <div class="staff">
-                        <div class="staffl">
-                            <img src="https://crafatar.com/renders/body/7c43add2-27ef-4e01-9be5-0ee4e5b7d03a?overlay=true">
-                        </div>
-                        <div class="staffr">
-                            <table>
-                                <tr>
-                                    <th>役職</th>
-                                    <td>プラグイン開発者</td>
-                                </tr>
-                                <tr>
-                                    <th>概要</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>Twitter</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>Discord</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>MCID</th>
-                                    <td>mf_Mii</td>
-                                </tr>
-                            </table>
+
+                    <div id="admin">
+                        <h1>管理者(Admin)</h1>
+                        <div style="display: flex; justify-content: center;">
+                            <div class="users">
+                                <div class="user-top">
+                                    <img alt="mf_Mii" src="https://crafatar.com/avatars/7c43add2-27ef-4e01-9be5-0ee4e5b7d03a">
+                                    <p style="font-size: 40px;margin: 0px;">mf_Mii</p>
+                                    <p style="margin: 0px;">役職｜開発者</p>
+                                </div>
+                                <div class="user-main">
+                                    <p style="font-size: 20px;">ここに自己紹介を書いてもらう</p>
+                                </div>
+                                <div class="user-sns">
+                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/disco_ico.png" alt="Discord"></a>
+                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/Github_ico.png" alt="Github"></a>
+                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/yt_ico.png" alt="Youtube"></a>
+                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/tw_ico.png" alt="Twitter"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <br><br>
-
-                <div class="text_box">
-                    <h1>swinkers</h1>
-                    <hr>
-                    <div class="staff">
-                        <div class="staffl">
-                            <img src="https://crafatar.com/renders/body/63920e65-2189-4f2a-b3b5-ee282ac15bd4?overlay=true">
-                        </div>
-                        <div class="staffr">
-                            <table>
-                                <tr>
-                                    <th>役職</th>
-                                    <td>運営</td>
-                                </tr>
-                                <tr>
-                                    <th>概要</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>Twitter</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>Discord</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>MCID</th>
-                                    <td>swinkers1167</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <br><br>
-
-                <div class="text_box">
-                    <h1>くるりーむ</h1>
-                    <hr>
-                    <div class="staff">
-                        <div class="staffl">
-                            <img src="https://crafatar.com/renders/body/3b2d449b-475a-4c9e-a20d-dfbd4a9be5af?overlay=true">
-                        </div>
-                        <div class="staffr">
-                            <table>
-                                <tr>
-                                    <th>役職</th>
-                                    <td>運営</td>
-                                </tr>
-                                <tr>
-                                    <th>概要</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>Twitter</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>Discord</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>MCID</th>
-                                    <td>kururi_sub</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <br><br>
-
-                <div class="text_box">
-                    <h1>ルーミにゃ</h1>
-                    <hr>
-                    <div class="staff">
-                        <div class="staffl">
-                            <img src="https://crafatar.com/renders/body/3d1d9c05-b723-43c8-9e32-3bc7113e7842?overlay=true">
-                        </div>
-                        <div class="staffr">
-                            <table>
-                                <tr>
-                                    <th>役職</th>
-                                    <td>中継サーバー管理者？</td>
-                                </tr>
-                                <tr>
-                                    <th>概要</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>Twitter</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>Discord</th>
-                                    <td>-</td>
-                                </tr>
-                                <tr>
-                                    <th>MCID</th>
-                                    <td>suzuki727</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
                 </div>
 
             </div>
         </div>
     </div>
-    <div class="protect-alert">
-        <div class="alert_msg_window">
+    <div class="protect-alert ">
+        <div class="alert_msg_window ">
             <h4>WARN: Context menu not allowed to protect image!</h4>
             <p>
                 画像保護のためにこの画像の上では右クリックが禁止されています
             </p>
         </div>
     </div>
-    <script src="/assets/js/protect.js"></script>
-    <script src="/assets/js/sidebar.js"></script>
+    <script src="/assets/js/protect.js "></script>
+    <script src="/assets/js/sidebar.js "></script>
 </body>
 
 </html>
