@@ -50,8 +50,6 @@ body .site-contents .grid_header::before {
   -webkit-filter: blur(5px);
           filter: blur(5px);
   z-index: -1;
-  /*ここに書いても反映されなかったのでCSSにも直接書きました、すみません
-                あとこの方法は調べたら出てきました...*/
 }
 
 body .site-contents .grid_textarea {
