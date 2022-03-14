@@ -1,0 +1,71 @@
+body .site-contents .grid_1{
+    .cont_box{
+        .staff_group{
+            background-color: #ffffff77;
+            width: 80%;
+            margin: 30px auto;
+            padding: 0px 0px 20px 0px;
+            .stgrp_title{
+                font-weight: normal;
+                display: block;
+                background-color: #fffa;
+                border-bottom: 1px solid #0007;
+                font-size: 2.15rem;
+                text-align: center;
+                font-family: 'Kiwi Maru', serif;
+            }
+            .staffs{
+                list-style: none;
+                li {
+                    display: inline-block;
+                    .staff{
+                        width: 230px;
+                        background-color: #aaf6;
+                        img.head_icon{
+                            display: block;
+                            width: 40%;
+                            margin: auto;
+                            padding: 15px;
+                        }
+                        .infos{
+                            text-align: center;
+                            span{
+                                display: block;
+                            }
+                            .name{
+                                font-size: 30px;
+                            }
+                            .self_promo{
+                                display: block;
+                                margin: 0px auto 10px auto;
+                                font-size: 15px;
+                                font-family: 'M PLUS 1 Code', sans-serif;
+                                text-align: left;
+                                width: 95%;
+                            }
+                            .links{
+                                list-style: none;
+                                margin: 0; padding: 0;
+                                display: block;
+                                margin: 0px auto;
+                                padding-bottom: 10px;
+                                li.link{
+                                    a{
+                                        color: #333;
+                                        img{
+                                            width: 35px;
+                                            vertical-align: middle;
+                                        }
+                                    }
+                                    &.invalid{
+                                        filter: grayscale(1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

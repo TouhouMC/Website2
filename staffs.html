@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="/assets/css/fonts.css">
     <link rel="stylesheet" href="/assets/css/menu.css">
     <link rel="stylesheet" href="/assets/css/children.css">
+    <link rel="stylesheet" href="/assets/css/staffs.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="東方MC Project. Coded by mf_Mii">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=M+PLUS+1+Code:wght@300&display=swap" rel="stylesheet">
     <style>
         .users {
             background-color: #aaf6;
@@ -33,7 +37,7 @@
     </style>
 </head>
 
-<body onselectstart="return false;" onmousedown="return false;">
+<body>
     <div class="site-contents">
         <div id="Top"></div>
         <div class="menu_tab">
@@ -94,55 +98,55 @@
         </div>
         <div class="grid grid_textarea grid_1">
             <div class="cont_box">
-                <div class="text_box">
-
-                    <div id="owner">
-                        <h1>オーナー(Owner)</h1>
+                <div class="staff_group">
+                    <div id="stgrp_owner">
+                        <h1 class="stgrp_title">オーナー -Owner-</h1>
                         <div style="display: flex; justify-content: center;">
-                            <div class="users">
-                                <div class="user-top">
-                                    <img alt="pknmus" src="https://crafatar.com/avatars/10b4df5c-3cba-44df-b4dd-6da3d8bdb093">
-                                    <p style="font-size: 40px;margin: 0px;">pknmus</p>
-                                    <p style="margin: 0px;">役職｜オーナー</p>
-                                </div>
-                                <div class="user-main">
-                                    <p style="font-size: 20px;">ここに自己紹介を書いてもらう</p>
-                                </div>
-                                <div class="user-sns">
-                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/disco_ico.png" alt="Discord" style="filter: grayscale(1);"></a>
-                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/Github_ico.png" alt="Github" style="filter: brightness(3);"></a>
-                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/yt_ico.png" alt="Youtube" style="filter: grayscale(1);"></a>
-                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/tw_ico.png" alt="Twitter" style="filter: grayscale(1);"></a>
-                                </div>
-                            </div>
+                            <ul class="staffs">
+                                <li>
+                                    <div class="staff">
+                                        <img class="head_icon" title="pknmus" alt="pknmus" src="https://crafatar.com/avatars/10b4df5c-3cba-44df-b4dd-6da3d8bdb093">
+                                        <div class="infos">
+                                            <span class="name">pknmus</span>
+                                            <span class="role">役職｜オーナー</span>
+                                            <p class="self_promo">これは自己紹介文のデフォルトテキストです。</p>
+                                            <ul class="links">
+                                                <li class="link invalid" title="Twitter"><a target="_blank" rel="noopener noreferrer"><img src="/assets/img/tw_ico.png" alt="Twitter"></a></li>
+                                                <li class="link invalid" title="Github"><a target="_blank" rel="noopener noreferrer"><img src="/assets/img/Github_ico.png" alt="Twitter"></a></li>
+                                                <li class="link invalid" title="YouTube"><a target="_blank" rel="noopener noreferrer"><img src="/assets/img/yt_ico.png" alt="Twitter"></a></li>
+                                                <li class="link invalid" title="Discord"><a target="_blank" rel="noopener noreferrer"><img src="/assets/img/disco_ico.png" alt="Twitter"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-
                     </div>
                 </div>
-                <div class="text_box">
-
-                    <div id="admin">
-                        <h1>管理者(Admin)</h1>
+                <div class="staff_group">
+                    <div id="stgrp_admin">
+                        <h1 class="stgrp_title">管理者 -Admin-</h1>
                         <div style="display: flex; justify-content: center;">
-                            <div class="users">
-                                <div class="user-top">
-                                    <img alt="mf_Mii" src="https://crafatar.com/avatars/7c43add2-27ef-4e01-9be5-0ee4e5b7d03a">
-                                    <p style="font-size: 40px;margin: 0px;">mf_Mii</p>
-                                    <p style="margin: 0px;">役職｜開発者</p>
-                                </div>
-                                <div class="user-main">
-                                    <p style="font-size: 20px;">ここに自己紹介を書いてもらう</p>
-                                </div>
-                                <div class="user-sns">
-                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/disco_ico.png" alt="Discord"></a>
-                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/Github_ico.png" alt="Github"></a>
-                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/yt_ico.png" alt="Youtube"></a>
-                                    <a target="_blank"><img width="20%" align="middle" src="/assets/img/tw_ico.png" alt="Twitter"></a>
-                                </div>
-                            </div>
+                            <ul class="staffs">
+                                <li>
+                                    <div class="staff">
+                                        <img class="head_icon" title="mf_Mii" alt="mf_Mii" src="https://crafatar.com/avatars/10b4df5c-3cba-44df-b4dd-6da3d8bdb093">
+                                        <div class="infos">
+                                            <span class="name">mf_Mii</span>
+                                            <span class="role">役職｜開発者</span>
+                                            <p class="self_promo">コーヒーにめっぽう弱いのに<span class="br"></span>作業中はコーヒー飲むせいで<span class="br"></span>お腹下す人。</p>
+                                            <ul class="links">
+                                                <li class="link" title="Twitter"><a href="https://twitter.com/JP_mf_Mii" target="_blank" rel="noopener noreferrer"><img src="/assets/img/tw_ico.png" alt="Twitter"></a></li>
+                                                <li class="link" title="Github"><a href="https://github.com/mf-Mii" target="_blank" rel="noopener noreferrer"><img src="/assets/img/Github_ico.png" alt="Twitter"></a></li>
+                                                <li class="link invalid" title="YouTube"><a target="_blank" rel="noopener noreferrer"><img src="/assets/img/yt_ico.png" alt="Twitter"></a></li>
+                                                <li class="link" title="Discord"><a href="https://discord.com/" target="_blank" rel="noopener noreferrer"><img src="/assets/img/disco_ico.png" alt="Twitter"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
                 </div>
 
             </div>
@@ -158,6 +162,13 @@
     </div>
     <script src="/assets/js/protect.js "></script>
     <script src="/assets/js/sidebar.js "></script>
+    <script>
+        document.body.oncopy = function(){return false;}
+        //document.body.oncontextmenu = function () {return false;}
+        document.body.onselectstart = function() {return false;}
+        document.body.onmousedown = function () {return false;}
+        document.getElementById("img_loading_screen_loading").oncontextmenu = function() {return false;}
+    </script>
 </body>
 
 </html>

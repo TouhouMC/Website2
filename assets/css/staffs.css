@@ -1,0 +1,81 @@
+body .site-contents .grid_1 .cont_box .staff_group {
+  background-color: #ffffff77;
+  width: 80%;
+  margin: 30px auto;
+  padding: 0px 0px 20px 0px;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .stgrp_title {
+  font-weight: normal;
+  display: block;
+  background-color: #fffa;
+  border-bottom: 1px solid #0007;
+  font-size: 2.15rem;
+  text-align: center;
+  font-family: 'Kiwi Maru', serif;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs {
+  list-style: none;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li {
+  display: inline-block;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li .staff {
+  width: 230px;
+  background-color: #aaf6;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li .staff img.head_icon {
+  display: block;
+  width: 40%;
+  margin: auto;
+  padding: 15px;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li .staff .infos {
+  text-align: center;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li .staff .infos span {
+  display: block;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li .staff .infos .name {
+  font-size: 30px;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li .staff .infos .self_promo {
+  display: block;
+  margin: 0px auto 10px auto;
+  font-size: 15px;
+  font-family: 'M PLUS 1 Code', sans-serif;
+  text-align: left;
+  width: 95%;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li .staff .infos .links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin: 0px auto;
+  padding-bottom: 10px;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li .staff .infos .links li.link a {
+  color: #333;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li .staff .infos .links li.link a img {
+  width: 35px;
+  vertical-align: middle;
+}
+
+body .site-contents .grid_1 .cont_box .staff_group .staffs li .staff .infos .links li.link.invalid {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+/*# sourceMappingURL=staffs.css.map */

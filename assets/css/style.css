@@ -102,4 +102,8 @@ body .site-contents .grid .cont_box {
   -webkit-transition: .5s;
   transition: .5s;
 }
+
+.br {
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
