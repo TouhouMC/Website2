@@ -28,9 +28,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body onselectstart="return false;" onmousedown="return false;">
+<body >
     <div class="loading">
-        <img src="/assets/img/loading.gif" alt="Loading..." oncontextmenu="return false;">
+        <img id="img_loading_screen_loading" src="/assets/img/loading.gif" alt="Loading..." oncontextmenu="return false;">
     </div>
     <div class="site-contents">
         <div id="top"></div>
@@ -272,6 +272,13 @@
                 a.css("height", "0");
             }, wait + duration);
         }
+    </script>
+    <script>
+        document.body.oncopy = function(){return false;}
+        //document.body.oncontextmenu = function () {return false;}
+        document.body.onselectstart = function() {return false;}
+        document.body.onmousedown = function () {return false;}
+        document.getElementById("img_loading_screen_loading").oncontextmenu = function() {return false;}
     </script>
 </body>
 
