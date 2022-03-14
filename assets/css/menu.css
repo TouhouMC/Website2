@@ -20,6 +20,7 @@
   background-color: rgba(255, 255, 255, 0.7);
   /* background-color: aqua; */
   font-size: 30px;
+  overflow-x: hidden;
   /*share*/
   /*著作権*/
 }
