@@ -6,3 +6,4 @@
 /assets/img/*/*.gvdesign
 /assets/img/*.gvdesign
 *.code-workspace
+/debug
